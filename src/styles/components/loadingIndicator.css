@@ -1,0 +1,42 @@
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+}
+
+.loading-indicator {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  .loading-indicator__dots {
+    align-items: flex-end;
+    display: flex;
+    gap: 8px;
+
+    .loading-indicator__dot {
+      animation: wave 1s infinite ease-in-out;
+      background-color: var(--gray-900);
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+
+      &:nth-child(1) {
+        animation-delay: 0s;
+      }
+      &:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+    }
+  }
+}
