@@ -81,6 +81,7 @@ movies-app/
    ```
 
 3. Set up environment variables:
+
    - Copy `.env.example` to `.env`:
      ```bash
      cp .env.example .env
@@ -89,6 +90,12 @@ movies-app/
      ```
      VITE_TMDB_API_KEY=your_api_key_here
      ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   This will start the Vite development server and open the application in your browser at `http://localhost:5173` (or another port if 5173 is already in use).
 
 ## Available Scripts
 
